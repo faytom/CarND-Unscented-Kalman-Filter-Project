@@ -67,6 +67,20 @@ public:
   ///* Sigma point spreading parameter
   double lambda_;
 
+  //create augmented mean vector
+  VectorXd x_aug;
+
+  //create augmented state covariance
+  MatrixXd P_aug;
+
+  //create sigma point matrix
+  MatrixXd Xsig_aug;
+
+  //NIS for laser
+  double NIS_laser_;
+
+  //NIS for radar
+  double NIS_radar_;
 
   /**
    * Constructor

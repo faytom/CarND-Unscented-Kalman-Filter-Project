@@ -117,8 +117,16 @@ int main()
     	  double v  = ukf.x_(2);
     	  double yaw = ukf.x_(3);
 
+        
+
     	  double v1 = cos(yaw)*v;
     	  double v2 = sin(yaw)*v;
+
+        std::cout << "p_x: " << p_x << std::endl;
+        std::cout << "p_y: " << p_y << std::endl;
+        std::cout << "V1: " << v1 << std::endl;
+        std::cout << "V2: " << v2 << std::endl;
+
 
     	  estimate(0) = p_x;
     	  estimate(1) = p_y;
